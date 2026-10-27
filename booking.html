@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>// Запис на тренування — ПУЛЬС</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Навігація -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-accent">//</span> ПУЛЬС
+        <span class="logo-sub">ФІТНЕС-КЛУБ У КИЄВІ (ПЕЧЕРСЬК)</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html#about" class="nav-link">Про клуб</a>
+        <a href="index.html#directions" class="nav-link">Напрямки</a>
+        <a href="index.html#schedule" class="nav-link">Розклад</a>
+        <a href="index.html#trainers" class="nav-link">Тренери</a>
+        <a href="index.html#pricing" class="nav-link">Абонементи</a>
+        <a href="gallery.html" class="nav-link">Галерея</a>
+      </nav>
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary">Пробне тренування</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-section">
+      <div class="container">
+        <div class="booking-grid">
+          
+          <!-- Ліва колонка: Інформація -->
+          <div class="booking-info-col">
+            <span class="section-badge">// ПЕРШИЙ КРОК</span>
+            <h1 class="booking-title">Запис на пробне тренування</h1>
+            <p class="booking-desc">
+              Відчуй атмосферу фітнес-клубу ПУЛЬС. Перше тренування з тренером — це легкий старт без стресу та нав'язаних умов.
+            </p>
+
+            <div class="trial-included">
+              <h3>Що входить у пробне тренування за 300 ₴:</h3>
+              <ul class="included-list">
+                <li><span class="check-icon">✓</span> Персональна консультація та визначення цілей</li>
+                <li><span class="check-icon">✓</span> Тестування фізичної форми та техніки вправ</li>
+                <li><span class="check-icon">✓</span> Повноцінне заняття у тренажерному залі або групі</li>
+                <li><span class="check-icon">✓</span> Доступ до фінської сауни, роздягалень та зони відпочинку</li>
+                <li><span class="check-icon">✓</span> Шафка, рушник та питна вода</li>
+              </ul>
+            </div>
+
+            <div class="booking-contacts-snippet">
+              <p>Маєте питання щодо запису? Телефонуйте напряму:</p>
+              <a href="tel:+380671234567" class="phone-link">+380 67 123 45 67</a>
+            </div>
+          </div>
+
+          <!-- Права колонка: Форма -->
+          <div class="booking-form-col">
+            <form class="custom-booking-form" id="mainBookingForm">
+              <h2>Забронювати час</h2>
+              <p class="form-subtext">Заповни дані, і ми зв'яжемося протягом 15 хвилин для підтвердження.</p>
+
+              <div class="form-group">
+                <label for="userName">Ваше ім'я *</label>
+                <input type="text" id="userName" placeholder="Олександр" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userPhone">Номер телефону *</label>
+                <input type="tel" id="userPhone" placeholder="+380 67 123 45 67" required>
+              </div>
+
+              <div class="form-group">
+                <label for="workoutType">Оберіть напрямок тренування</label>
+                <select id="workoutType">
+                  <option value="trial">Пробне заняття (300 ₴)</option>
+                  <option value="power">Силові тренування / Power</option>
+                  <option value="cardio">Cardio & HIIT</option>
+                  <option value="balance">Йога / Пілатес / Stretching</option>
+                  <option value="personal">Персональний тренер</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="trainerSelect">Оберіть тренера (опціонально)</label>
+                <select id="trainerSelect">
+                  <option value="any">Будь-який вільний тренер</option>
+                  <option value="bondar">Андрій Бондар (Силове, Functional)</option>
+                  <option value="koval">Марія Коваль (Йога, Pilates)</option>
+                  <option value="levchenko">Максим Левченко (HIIT, Boxing)</option>
+                  <option value="savchuk">Олена Савчук (Йога-Баланс)</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="preferredDate">Бажана дата</label>
+                  <input type="date" id="preferredDate">
+                </div>
+                <div class="form-group">
+                  <label for="preferredTime">Зручний час</label>
+                  <select id="preferredTime">
+                    <option value="morning">Ранок (07:00 - 12:00)</option>
+                    <option value="day">День (12:00 - 17:00)</option>
+                    <option value="evening">Вечір (17:00 - 22:00)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="userComment">Коментар або побажання</label>
+                <textarea id="userComment" rows="3" placeholder="Особливі побажання або рівень підготовки..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width">Підтвердити запис ↗</button>
+              <p class="form-privacy">Натискаючи кнопку, ви погоджуєтеся на обробку персональних даних.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <span class="logo-accent">//</span> ПУЛЬС
+      </div>
+      <div class="footer-slogan">Твій рух. Твоя сила. Твій пульс.</div>
+      <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Вгору">↑</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

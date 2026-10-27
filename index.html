@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>// ПУЛЬС — Фітнес-клуб у Києві (Печерськ)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Навігація -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-accent">//</span> ПУЛЬС
+        <span class="logo-sub">ФІТНЕС-КЛУБ У КИЄВІ (ПЕЧЕРСЬК)</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">Про клуб</a>
+        <a href="#directions" class="nav-link">Напрямки</a>
+        <a href="#schedule" class="nav-link">Розклад</a>
+        <a href="#trainers" class="nav-link">Тренери</a>
+        <a href="#pricing" class="nav-link">Абонементи</a>
+        <a href="gallery.html" class="nav-link">Галерея</a>
+      </nav>
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary">Пробне тренування</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Секція -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            ТВІЙ РУХ.<br>
+            ТВОЯ СИЛА.<br>
+            <span class="highlight">ТВІЙ ПУЛЬС.</span>
+          </h1>
+          <p class="hero-description">
+            Тренуйся у своєму ритмі. Обирай заняття, знаходь свого тренера та ставай сильнішим щодня.
+          </p>
+          <div class="hero-btns">
+            <a href="#directions" class="btn btn-primary">Знайти своє тренування ↗</a>
+            <a href="#schedule" class="btn btn-outline">Дивитися розклад</a>
+          </div>
+        </div>
+
+        <!-- Статистика -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-num">1 200 м²</div>
+            <div class="stat-label">простір для прогресу</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">20+</div>
+            <div class="stat-label">занять щодня</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">12</div>
+            <div class="stat-label">сертифікованих тренерів</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">07:00-23:00</div>
+            <div class="stat-label">без вихідних</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Про клуб -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-header">
+          <h2 class="section-title">Не треба бути у формі, щоб почати.</h2>
+          <p class="section-subtitle">
+            Ми створили ПУЛЬС, щоб спорт став хорошою звичкою, а не випробуванням. Тут немає чужих стандартів — є твоя ціль, уважна команда і простір, у який хочеться повертатися.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>Обладнання, яке працює на тебе</h3>
+            <p>Тренажери вільного ваги та функціональна зона від провідних брендів.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Підтримка замість порівнянь</h3>
+            <p>Малі групи, увага тренера, дружня атмосфера та взаємоповага.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Комфорт до і після тренування</h3>
+            <p>Просторі роздягальні, фінська сауна, рушники та зона відпочинку.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Напрямки -->
+    <section class="directions-section" id="directions">
+      <div class="container">
+        <div class="section-top">
+          <h2 class="section-title">Різні цілі. Твій вибір.</h2>
+          <p class="section-subtitle">Набрати силу, перезавантажитися чи просто відчути себе краще — почни з того, що тобі ближче.</p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Card 1 -->
+          <div class="dir-card">
+            <div class="dir-img-wrapper">
+              <span class="dir-tag">01 / POWER</span>
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop" alt="Power training">
+              <a href="#schedule" class="circle-arrow-btn">↗</a>
+            </div>
+            <div class="dir-info">
+              <h3>Сила та витривалість</h3>
+              <p>Функціональні та силові тренування для формування рельєфу та міцного корсета.</p>
+              <div class="tags-list">
+                <span>Strength</span>
+                <span>Functional</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="dir-card">
+            <div class="dir-img-wrapper">
+              <span class="dir-tag">02 / CARDIO</span>
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop" alt="Cardio training">
+              <a href="#schedule" class="circle-arrow-btn">↗</a>
+            </div>
+            <div class="dir-info">
+              <h3>Енергія та драйв</h3>
+              <p>Інтенсивні кардіо-програми для спалювання калорій, тренування серця та драйву.</p>
+              <div class="tags-list">
+                <span>HIIT</span>
+                <span>Cycle</span>
+                <span>Boxing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="dir-card">
+            <div class="dir-img-wrapper">
+              <span class="dir-tag">03 / BALANCE</span>
+              <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=800&auto=format&fit=crop" alt="Balance training">
+              <a href="#schedule" class="circle-arrow-btn">↗</a>
+            </div>
+            <div class="dir-info">
+              <h3>Баланс та відновлення</h3>
+              <p>Гнучкість, зняття напруги, повернення контролю над тілом та спокій розуму.</p>
+              <div class="tags-list">
+                <span>Yoga</span>
+                <span>Pilates</span>
+                <span>Stretching</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Розклад -->
+    <section class="schedule-section" id="schedule">
+      <div class="container">
+        <div class="schedule-header">
+          <div>
+            <span class="section-badge">04 / РОЗКЛАД</span>
+            <h2 class="section-title">Твій тиждень у русі.</h2>
+            <p class="section-subtitle">Обирай зручний час та свого тренера. Усі групові заняття вже входять до абонемента.</p>
+          </div>
+          <div class="schedule-date-nav">
+            <button class="nav-arrow" aria-label="Попередній тиждень">&lt;</button>
+            <span>19–25 жовтня 2026</span>
+            <button class="nav-arrow" aria-label="Наступний тиждень">&gt;</button>
+          </div>
+        </div>
+
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-filter="all">Усі напрямки</button>
+          <button class="tab-btn" data-filter="power">Силові</button>
+          <button class="tab-btn" data-filter="cardio">Кардіо</button>
+          <button class="tab-btn" data-filter="balance">Баланс</button>
+        </div>
+
+        <div class="schedule-table-wrapper">
+          <div class="schedule-grid" id="scheduleGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Персональні тренування -->
+    <section class="personal-section">
+      <div class="container">
+        <div class="personal-card">
+          <div class="personal-img-col">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop" alt="Персональний тренер">
+            <div class="personal-tag">05 / ТРЕНЕР + ТИ</div>
+          </div>
+          <div class="personal-content-col">
+            <span class="sub-badge">ПЕРСОНАЛЬНИЙ ПІДХІД</span>
+            <h2>Одна ціль.<br>Повна увага.</h2>
+            <p>Твій досвід, ритм життя та можливості — основа програми. Разом із тренером рухайся до результату без зайвих експериментів.</p>
+            
+            <ul class="check-list">
+              <li><span>01</span> Знайомство, тестування та чітка ціль</li>
+              <li><span>02</span> План тренувань, адаптований під тебе</li>
+              <li><span>03</span> Контроль техніки та відстеження прогресу</li>
+            </ul>
+
+            <div class="personal-action">
+              <a href="booking.html" class="btn btn-dark">Підібрати тренера ↗</a>
+              <div class="price-from">
+                <span class="p-label">від</span>
+                <span class="p-amount">800 ₴</span>
+                <span class="p-sub">за тренування</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Абонементи -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="pricing-header">
+          <span class="section-badge">06 / АБОНЕМЕНТИ</span>
+          <h2 class="section-title">Обирай свій ритм.</h2>
+          <p class="section-subtitle">Прозорі умови. Жодних вступних внесків. Просто ти і твій наступний крок.</p>
+          
+          <div class="pricing-toggle-wrap">
+            <span>1 місяць</span>
+            <label class="switch">
+              <input type="checkbox" id="pricingToggle">
+              <span class="slider"></span>
+            </label>
+            <span>3 місяці <span class="badge-discount">-10%</span></span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- План Старт -->
+          <div class="price-card">
+            <div class="price-head">
+              <h3>Старт</h3>
+              <div class="card-price" data-m1="1 900" data-m3="1 710">
+                <span class="val">1 900</span> <span class="curr">₴/місяць</span>
+              </div>
+              <p>Для тих, хто любить тренуватися зранку або удень.</p>
+            </div>
+            <ul class="price-features">
+              <li>✓ Будні з 07:00 до 17:00</li>
+              <li>✓ Тренажерний зал без обмежень</li>
+              <li>✓ Групові заняття до 17:00</li>
+              <li>✓ Вступна консультація тренера</li>
+            </ul>
+            <a href="booking.html" class="btn btn-outline full-width">Обрати «Старт»</a>
+          </div>
+
+          <!-- План Ритм -->
+          <div class="price-card featured">
+            <div class="popular-badge">ПОПУЛЯРНИЙ</div>
+            <div class="price-head">
+              <h3>Ритм</h3>
+              <div class="card-price" data-m1="2 500" data-m3="2 250">
+                <span class="val">2 500</span> <span class="curr">₴/місяць</span>
+              </div>
+              <p>Повна свобода для тренувань у власному ритмі.</p>
+            </div>
+            <ul class="price-features">
+              <li>✓ Щодня з 07:00 до 23:00</li>
+              <li>✓ Зал та всі групові заняття</li>
+              <li>✓ Сауна, рушники та питна вода</li>
+              <li>✓ 7 днів заморозки абонемента</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary full-width">Обрати «Ритм»</a>
+          </div>
+
+          <!-- План Максимум -->
+          <div class="price-card">
+            <div class="price-head">
+              <h3>Максимум</h3>
+              <div class="card-price" data-m1="4 900" data-m3="4 410">
+                <span class="val">4 900</span> <span class="curr">₴/місяць</span>
+              </div>
+              <p>Клубний доступ та персональна підтримка для результату.</p>
+            </div>
+            <ul class="price-features">
+              <li>✓ Усе, що входить у «Ритм»</li>
+              <li>✓ 4 персональні тренування</li>
+              <li>✓ Індивідуальний план занять</li>
+              <li>✓ 14 днів заморозки абонемента</li>
+            </ul>
+            <a href="booking.html" class="btn btn-outline full-width">Обрати «Максимум»</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Тренери -->
+    <section class="trainers-section" id="trainers">
+      <div class="container">
+        <div class="section-top-flex">
+          <div>
+            <span class="section-badge">07 / ТРЕНЕРИ</span>
+            <h2 class="section-title">Сильна команда. Твоя.</h2>
+            <p class="section-subtitle">Не просто показують вправи. Слухають, направляють і допомагають повірити у власні можливості.</p>
+          </div>
+        </div>
+
+        <div class="trainers-grid">
+          <!-- Trainer 1 -->
+          <div class="trainer-card">
+            <div class="trainer-img-wrap">
+              <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=600&auto=format&fit=crop" alt="Андрій Бондар">
+              <span class="exp-badge">8 РОКІВ ДОСВІДУ</span>
+            </div>
+            <div class="trainer-body">
+              <h3>Андрій Бондар</h3>
+              <p class="trainer-spec">Силове, Functional, TRX</p>
+              <a href="booking.html" class="btn-link">Тренуватися разом →</a>
+            </div>
+          </div>
+
+          <!-- Trainer 2 -->
+          <div class="trainer-card">
+            <div class="trainer-img-wrap">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=600&auto=format&fit=crop" alt="Марія Коваль">
+              <span class="exp-badge">6 РОКІВ ДОСВІДУ</span>
+            </div>
+            <div class="trainer-body">
+              <h3>Марія Коваль</h3>
+              <p class="trainer-spec">Йога, Pilates, Stretching</p>
+              <a href="booking.html" class="btn-link">Тренуватися разом →</a>
+            </div>
+          </div>
+
+          <!-- Trainer 3 -->
+          <div class="trainer-card">
+            <div class="trainer-img-wrap">
+              <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=600&auto=format&fit=crop" alt="Максим Левченко">
+              <span class="exp-badge">7 РОКІВ ДОСВІДУ</span>
+            </div>
+            <div class="trainer-body">
+              <h3>Максим Левченко</h3>
+              <p class="trainer-spec">HIIT, Cycle, Boxing</p>
+              <a href="booking.html" class="btn-link">Тренуватися разом →</a>
+            </div>
+          </div>
+
+          <!-- Trainer 4 -->
+          <div class="trainer-card">
+            <div class="trainer-img-wrap">
+              <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=600&auto=format&fit=crop" alt="Олена Савчук">
+              <span class="exp-badge">5 РОКІВ ДОСВІДУ</span>
+            </div>
+            <div class="trainer-body">
+              <h3>Олена Савчук</h3>
+              <p class="trainer-spec">Йога-Баланс, Відновлення</p>
+              <a href="booking.html" class="btn-link">Тренуватися разом →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Відгуки -->
+    <section class="reviews-section">
+      <div class="container">
+        <div class="reviews-top">
+          <h2 class="section-title">Реальні люди. Відчутні зміни.</h2>
+          <div class="rating-badge">★ 4.9 / 5</div>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Уперше прийшла в зал і не відчула себе зайвою. Андрій усе пояснив — тепер тренуюся тричі на тиждень і нарешті бачу прогрес.»</p>
+            <div class="author">Катерина М.</div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Розклад легко вписати в робочий день. HIIT із Максимом — мій найкращий спосіб перезавантажитися після офісу.»</p>
+            <div class="author">Дмитро К.</div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Пілатес із Марією змінив моє ставлення до руху. Спина більше не нагадує про сидячу роботу, а на заняття справді хочеться йти.»</p>
+            <div class="author">Софія Л.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Запис на перше тренування -->
+    <section class="trial-section">
+      <div class="container">
+        <div class="trial-card">
+          <div class="trial-text">
+            <span class="sub-badge-dark">08 / ТВОЯ ТОЧКА СТАРТУ</span>
+            <h2>Почни з одного тренування.</h2>
+            <p>Знайомство з клубом, консультація тренера та перше заняття — усе за 300 ₴. Залиш номер, і ми допоможемо обрати формат і час.</p>
+            
+            <form class="trial-form" id="trialForm">
+              <input type="text" placeholder="Твоє ім'я" required>
+              <input type="tel" placeholder="+380 __ ___ __ __" required>
+              <button type="submit" class="btn btn-primary">Записатися за 300 ₴ ↗</button>
+            </form>
+            <p class="form-note">Перезвонимо протягом 15 хвилин у робочий час клубу.</p>
+          </div>
+          <div class="trial-img-wrap">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop" alt="Перше тренування">
+            <div class="floating-badge">Твій найкращий момент почати — зараз ↗</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакти -->
+    <section class="contacts-section" id="contacts">
+      <div class="container">
+        <div class="contacts-grid">
+          <div class="contacts-info">
+            <span class="section-badge">09 / ЗУСТРІНЕМОСЬ У ПУЛЬСІ</span>
+            <h2>Ми поруч.</h2>
+            <div class="contact-item">
+              <strong>Адреса:</strong>
+              <p>Київ, вул. Євгена Коновальця, 24 <br><small>(м. Печерська — 5 хвилин пішки)</small></p>
+            </div>
+            <div class="contact-item">
+              <strong>Телефон:</strong>
+              <p><a href="tel:+380671234567">+380 67 123 45 67</a></p>
+            </div>
+            <div class="contact-item">
+              <strong>Режим роботи:</strong>
+              <p>ВІДКРИТО ЩОДНЯ: 07:00–23:00</p>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-btn">Instagram ↗</a>
+              <a href="#" class="social-btn">Telegram ↗</a>
+            </div>
+          </div>
+          <div class="contacts-map">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=800&auto=format&fit=crop" alt="Карта Києва">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Модальне вікно запису з розкладу -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-window">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h3 id="modalTitle">Запис на тренування</h3>
+      <p>Залиште свої дані і адміністратор зв'яжеться з вами для підтвердження.</p>
+      <form class="modal-form" id="modalForm">
+        <input type="text" placeholder="Твоє ім'я" required>
+        <input type="tel" placeholder="+380 __ ___ __ __" required>
+        <button type="submit" class="btn btn-primary full-width">Записатися ↗</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <span class="logo-accent">//</span> ПУЛЬС
+      </div>
+      <div class="footer-slogan">Твій рух. Твоя сила. Твій пульс.</div>
+      <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Вгору">↑</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

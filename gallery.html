@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>// Галерея — ПУЛЬС Фітнес-клуб</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Навігація -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-accent">//</span> ПУЛЬС
+        <span class="logo-sub">ФІТНЕС-КЛУБ У КИЄВІ (ПЕЧЕРСЬК)</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html#about" class="nav-link">Про клуб</a>
+        <a href="index.html#directions" class="nav-link">Напрямки</a>
+        <a href="index.html#schedule" class="nav-link">Розклад</a>
+        <a href="index.html#trainers" class="nav-link">Тренери</a>
+        <a href="index.html#pricing" class="nav-link">Абонементи</a>
+        <a href="gallery.html" class="nav-link active-link">Галерея</a>
+      </nav>
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary">Пробне тренування</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-hero-section">
+      <div class="container">
+        <span class="section-badge">// 1 200 М² ПРОСТОРУ</span>
+        <h1 class="hero-title">Атмосфера ПУЛЬС</h1>
+        <p class="hero-description">
+          Ознайомтеся з тим, як влаштований наш клуб: сучасне обладнання, просторі зали для групових занять, комфортні роздягальні та зона відпочинку.
+        </p>
+
+        <!-- Фільтри галереї -->
+        <div class="filter-tabs gallery-tabs">
+          <button class="tab-btn active" data-gallery-filter="all">Усі фото</button>
+          <button class="tab-btn" data-gallery-filter="gym">Тренажерний зал</button>
+          <button class="tab-btn" data-gallery-filter="group">Групові зали</button>
+          <button class="tab-btn" data-gallery-filter="relax">Сауна та Відпочинок</button>
+        </div>
+
+        <!-- Сітка фотографій -->
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item" data-category="gym">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop" alt="Зона силових тренажерів">
+            <div class="gallery-overlay">
+              <span>Силова зона & Вільні ваги</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="gym">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200&auto=format&fit=crop" alt="Функціональна зона">
+            <div class="gallery-overlay">
+              <span>Кардіо зона & Бігові доріжки</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="group">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Зал сайклу">
+            <div class="gallery-overlay">
+              <span>Студія сайклу</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="group">
+            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1200&auto=format&fit=crop" alt="Студія йоги">
+            <div class="gallery-overlay">
+              <span>Студія йоги та пілатесу</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="gym">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1200&auto=format&fit=crop" alt="Персональний тренінг">
+            <div class="gallery-overlay">
+              <span>Зона персонального тренінгу</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="relax">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop" alt="Фінська сауна">
+            <div class="gallery-overlay">
+              <span>Фінська сауна</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="relax">
+            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1200&auto=format&fit=crop" alt="Лаунж зона">
+            <div class="gallery-overlay">
+              <span>Лаунж зона та фітнес-бар</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="group">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1200&auto=format&fit=crop" alt="Розстяжка та стретчинг">
+            <div class="gallery-overlay">
+              <span>Зона стретчингу</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Заклик до дії -->
+        <div class="gallery-cta">
+          <h2>Хочете побачити все на власні очі?</h2>
+          <p>Запишіться на пробне тренування вже сьогодні та почніть свій шлях.</p>
+          <a href="booking.html" class="btn btn-primary">Записатися на пробне тренування ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox (Збільшення фото) -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img id="lightboxImg" src="" alt="Перегляд">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <span class="logo-accent">//</span> ПУЛЬС
+      </div>
+      <div class="footer-slogan">Твій рух. Твоя сила. Твій пульс.</div>
+      <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Вгору">↑</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
